@@ -2,6 +2,10 @@
 
 A KDE Plasma panel widget showing horizontal bars for CPU usage, download speed, and upload speed — all in one compact widget.
 
+![cpu-net](cpu-net-speed.png)
+
+![cpu-net](desktop-2.png)
+
 ## Features
 
 - CPU usage bar (normalised across all cores)
