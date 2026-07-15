@@ -1,0 +1,17 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "JMC"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Horizontal bars showing CPU usage, download, and upload speed, with configurable colors and per-link speed scaling",
+        "Icon": "cpu",
+        "Id": "local.widget.cpu-net-speed",
+        "Name": "CPU & Network Speed",
+        "Version": "1.0"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
