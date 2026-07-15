@@ -9,6 +9,7 @@ A KDE Plasma panel widget showing horizontal bars for CPU usage, download speed,
 ## Features
 
 - CPU usage bar (normalised across all cores)
+- Video Card usage bar (normalised across all cores)
 - Download and upload speed bars
 - Per-link configurable speed scale (so the bar fills at your connection maximum)
 - Fully configurable bar colours
