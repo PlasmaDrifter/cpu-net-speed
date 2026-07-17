@@ -4,9 +4,11 @@ A KDE Plasma panel widget showing horizontal bars for CPU usage, download speed,
 
 ![cpu-net](cpu-net-speed.png)
 
+![cpu-net](cpu.net.png)
+
 ![cpu-net](desktop-2.png)
 
-![cpu-net](cpu.net.png)
+
 
 ## Features
 
