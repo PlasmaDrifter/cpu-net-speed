@@ -1,48 +1,52 @@
-# CPU & Network Speed
+# CPU & Network Speed Widget
 
-A KDE Plasma panel widget showing horizontal bars for CPU usage, download speed, and upload speed — all in one compact widget.
+[![KDE Plasma 6](https://img.shields.io/badge/KDE_Plasma-6.0+-3152A0?style=for-the-badge&logo=kde&logoColor=white)](https://kde.org/plasma-desktop/)
+[![QML](https://img.shields.io/badge/UI-QML%2FQt6-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://doc.qt.io/qt-6/qtqml-index.html)
+[![Category](https://img.shields.io/badge/System%20Monitor-FF9500?style=for-the-badge&logo=cpu&logoColor=white)](https://github.com/PlasmaDrifter)
+[![License](https://img.shields.io/badge/License-GPLv2-blue.svg?style=for-the-badge)](LICENSE)
 
-![cpu-net](cpu-net-speed.png)
+A compact, real-time CPU utilization and network throughput monitor for KDE Plasma 6.
 
-![cpu-net](cpu.net.png)
+---
 
-![cpu-net](desktop-2.png)
+## Previews
 
+![CPU & Network Speed Widget Preview](cpu.net.png)
 
+![CPU & Network Speed Widget Preview](cpu-net-speed.png)
+
+![CPU & Network Speed Widget Preview](desktop-2.png)
+
+---
 
 ## Features
 
-- CPU usage bar (normalised across all cores)
-- Video Card usage bar (normalised across all cores)
-- Download and upload speed bars
-- Per-link configurable speed scale (so the bar fills at your connection maximum)
-- Fully configurable bar colours
-- Compact horizontal layout — ideal for a horizontal panel
+- **Real-time**: CPU percentage monitoring and multi-core status
+- **Live**: network download and upload speed gauges
+- **Transparent**: background blending into any wallpaper or panel
+- **Compact**: layout suited for desktop or panel placement
 
 ## Requirements
 
-- KDE Plasma 6.0+
-- `org.kde.ksysguard.sensors` (included with Plasma)
+- **Environment**: KDE Plasma 6.0 or higher
+- **Framework**: Qt6 QML / Plasma Applet API
 
 ## Installation
 
+### Option 1: Git Clone (Recommended)
 ```bash
-cd ~/.local/share/plasma/plasmoids/
-git clone https://github.com/PlasmaDrifter/cpu-net-speed local.widget.cpu-net-speed
+mkdir -p ~/.local/share/plasma/plasmoids/
+git clone https://github.com/PlasmaDrifter/cpu-net-speed.git ~/.local/share/plasma/plasmoids/local.widget.cpu-net-speed
 ```
 
-Then right-click your panel → **Add Widgets** → search for **CPU & Network Speed**.
+### Option 2: Plasma Package Installer
+```bash
+kpackagetool6 -i ~/.local/share/plasma/plasmoids/local.widget.cpu-net-speed
+```
 
-## Configuration
+Then right-click your desktop or panel $\rightarrow$ **Add Widgets...** and search for the widget name.
 
-Right-click the widget → **Configure…**
+## Credits & License
 
-| Option | Description |
-|--------|-------------|
-| CPU colour | Bar fill colour for CPU usage |
-| Download colour | Bar fill colour for download speed |
-| Upload colour | Bar fill colour for upload speed |
-| Max download speed | Full-scale speed (Mbps) for the download bar |
-| Max upload speed | Full-scale speed (Mbps) for the upload bar |
-| Refresh interval | How often to update (seconds) |
-
+- **Author / Maintainer**: PlasmaDrifter
+- **License**: Licensed under the [GPLv2](LICENSE).
