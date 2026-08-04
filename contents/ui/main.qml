@@ -198,13 +198,11 @@ PlasmoidItem {
 
     fullRepresentation: ColumnLayout {
         id: fullRepItem
-        readonly property var appletInterface: Plasmoid.self
 
         Layout.minimumWidth: Kirigami.Units.gridUnit * 12
         Layout.minimumHeight: Kirigami.Units.gridUnit * 8
         Layout.preferredWidth: plasmoid.configuration.popupWidth
         Layout.preferredHeight: plasmoid.configuration.popupHeight
-        Layout.margins: Kirigami.Units.smallSpacing
         spacing: Kirigami.Units.smallSpacing * 2
 
         onWidthChanged: {
