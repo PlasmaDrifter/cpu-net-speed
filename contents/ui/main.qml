@@ -145,7 +145,7 @@ PlasmoidItem {
         "cat /proc/stat | head -n1; echo '###SPLIT###'; cat /sys/class/drm/card1/device/gpu_busy_percent 2>/dev/null || echo 0; echo '###SPLIT###'; cat /proc/net/dev; echo '###SPLIT###'; ip route show default 2>/dev/null | head -n1"
 
     Timer {
-        interval: (plasmoid.configuration.updateInterval || 2) * 1000
+        interval: (plasmoid.configuration.updateInterval || 5) * 1000
         running: true
         repeat: true
         triggeredOnStart: true
